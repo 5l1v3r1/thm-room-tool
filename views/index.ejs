@@ -1,0 +1,9 @@
+<link rel="stylesheet" href="/global.css">
+<% if (typeof error !== "undefined") { %>
+<% } %>
+<form method="GET" action="/room">
+  <h1>Room Tool</h1>
+  <h2><%= error %></h2>
+  <input placeholder="Enter room name" name="name">
+  <button>Go</button>
+</form>
